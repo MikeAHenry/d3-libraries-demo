@@ -1,0 +1,1 @@
+As you add a demo, create a directory for it and link it in the main index.html page.
