@@ -10,10 +10,22 @@
 
 	<!-- YOUR STYLES HERE -->
 	<style>
+
+		.chart-example {
+			width: 70%;
+			margin: auto;
+			text-align: right;
+		}
+
+		.chart-example .caption {
+			font-size: 10px;
+		}
 	
 		#bar-chart {
 			width: 100%;
 			height: 400px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.1) inset;
 		}
 
 	</style>
@@ -39,13 +51,17 @@
 	<div class="jumbotron">
 		<div class="container">
 			<h2>xcharts</h2>
-			<p>Info here</p>
+			<a href="http://tenxer.github.io/xcharts/"><h4>http://tenxer.github.io/xcharts/</h4></a>
+			<p>Creating a scatterplot with the creation of a new "scatter" vis type.</p>
 		</div>
 	</div>
 
 	<div class="container">
 		
-		<figure id="bar-chart"></figure>
+		<div class="chart-example">
+			<figure id="bar-chart"></figure>
+			<span class="caption"><a href="https://github.com/MikeAHenry/d3-libraries-demo/tree/master/xcharts">View source<a></span>
+		</div>
 		
 	</div>
 
