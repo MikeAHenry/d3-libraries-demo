@@ -24,10 +24,15 @@
     </div>
 
     <div class="container">
+        <h3>Basic Chart Creation</h3>
         <p>Days in July with a High Temperature over 90 degrees</p>
         <div id="visHighs"></div>
+        <h3>Use of the <code>extend</code> function</h3>
         <p>Days in July that it rained</p>
         <div id="visRain"></div>
+        <h3>Composing Multiple Charts</h3>
+        <p>Days in July that it rained, and rainfall in inches</p>
+        <div id="visRainAdv"></div>
     </div>
 
     <!-- Dependencies -->
@@ -36,8 +41,12 @@
 
     <!-- d3.chart -->
     <script src="scripts/lib/d3.chart.js"></script>
+     <script src="scripts/lib/d3.chart.barchart.js"></script>
 
-    <!-- demo script -->
+    <!-- demo scripts -->
+    <script src="scripts/circleChart.js"></script>
+    <script src="scripts/blueCircleChart.js"></script>
+    <script src="scripts/blueCircleBarChart.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>

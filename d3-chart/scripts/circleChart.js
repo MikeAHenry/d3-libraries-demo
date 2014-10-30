@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+(function() {
     d3.chart("CircleChart", {
         initialize: function() {
             // create a base scale we will use later.
@@ -10,17 +10,21 @@ document.addEventListener("DOMContentLoaded", function() {
                 .attr("width", this.w)
 
             this.layer("circles", circlesBase, {
+
                 dataBind: function(data) {
                     var chart = this.chart();
 
                     // update the domain of the xScale since it depends on the data
-                    chart.xScale.domain(d3.extent(data));
+                    chart.xScale.domain(d3.extent(data, function(d) {
+                        return d.date;
+                    }));
 
                     // return a data bound selection for the passed in data.
                     return this.selectAll("circle")
                         .data(data);
 
                 },
+
                 insert: function() {
                     var chart = this.chart();
 
@@ -43,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
                         // position newly entering elements
                         return this.attr("cx", function(d) {
-                            return chart.xScale(d);
+                            return chart.xScale(d.date);
                         });
                     }
                 }
@@ -56,28 +60,31 @@ document.addEventListener("DOMContentLoaded", function() {
                     return this.selectAll("text")
                         .data(data);
                 },
+
                 insert: function() {
                     return this.append("text")
                         .attr("text-anchor", "middle")
                         .classed("label", true);
                 },
+
                 events: {
                     enter: function() {
                         var chart = this.chart();
 
                         // position newly entering elements
                         return this.attr("x", function(d) {
-                                return chart.xScale(d);
+                                return chart.xScale(d.date);
                             })
                             .attr("y", (chart.height() / 2) - (chart.radius()*2))
                             .text(function(d) {
-                                return d;
+                                return d.date;
                             })
                             .style("font-size", "8pt");
                     }
                 }
             });
         },
+
         // configures the width of the chart.
         // when called without arguments, returns the
         // current width.
@@ -111,44 +118,4 @@ document.addEventListener("DOMContentLoaded", function() {
             return this;
         }
     });
-
-    var hotData = [1,3,5,10,11,12,28,31];
-
-    var chart1 = d3.select("#visHighs")
-        .append("svg")
-        .style("width", 500)
-        .style("height", 100)
-        .chart("CircleChart")
-            .width(500)
-            .height(50)
-            .radius(5);
-
-    chart1.draw(hotData);
-
-    // define an extended chart from the CircleChart:
-    d3.chart("CircleChart").extend("BlueCircleChart", {
-        initialize: function() {
-
-            // on the circles layer, hook into the enter lifecycle event
-            this.layer("circles").on("enter", function() {
-
-                // alter the style of the selection (in this case the circles)
-                // and set their fill to be blue instead.
-                return this.style("fill", "blue");
-            });
-        }
-    });
-
-    var rainData = [1,5,18,26,27,31];
-
-    var chart2 = d3.select("#visRain")
-        .append("svg")
-        .style("width", 500)
-        .style("height", 100)
-        .chart("BlueCircleChart")
-            .width(500)
-            .height(50)
-            .radius(5);
-
-    chart2.draw(rainData);
-});
+}());
