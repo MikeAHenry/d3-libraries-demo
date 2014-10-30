@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>d3.chart Demo</title>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="../index.html">Sapient Global Markets</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <div class="container">
+            <h2>d3.chart</h2>
+            <p>Info here</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <p>Days in July with a High Temperature over 90 degrees</p>
+        <div id="visHighs"></div>
+        <p>Days in July that it rained</p>
+        <div id="visRain"></div>
+    </div>
+
+    <!-- Dependencies -->
+
+    <script src="../bower_components/d3/d3.js"></script>
+
+    <!-- d3.chart -->
+    <script src="scripts/lib/d3.chart.js"></script>
+
+    <!-- demo script -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>

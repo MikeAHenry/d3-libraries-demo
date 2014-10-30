@@ -6,7 +6,7 @@ var data = {
   "yScale": "linear",
   "main": [
     {
-      "className": ".pizza",
+      "className": ".pizza-medium",
       "data": [
         {
           "x": "Pepperoni",
@@ -27,7 +27,7 @@ var data = {
       ]
     },
     {
-      "className": ".pizza2",
+      "className": ".pizza-large",
       "data": [
         {
           "x": "Pepperoni",
