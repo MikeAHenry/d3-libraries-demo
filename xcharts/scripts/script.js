@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			circles.enter()
 				.insert('circle')
 				.attr('style',"stroke-width: 0")
-				.attr('r',5)
+				.attr('r',2.5)
 				.attr('cx',function(d) { return self.xScale(d.x)})
 				.attr('cy',function(d) { return self.yScale(d.y)});
 
