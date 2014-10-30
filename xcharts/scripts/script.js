@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-
 	function generateRandomScatter(min, max, n) {
 		var data = [];
 		for (var i = 0; i < n; i++) {
@@ -14,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 	function getRandom (min, max) {
         return Math.random() * (max - min + 1) + min;
+
     }
 
 	var data = {
