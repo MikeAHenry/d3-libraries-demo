@@ -1,0 +1,117 @@
+[{
+    "timestamp": "2014-03-31T19:15:00.000Z",
+    "fund": "US Equity",
+    "benchmark": "S&P 500",
+    "analysis": [
+        {
+            "sectorCode": "CD",
+            "sector": "Consumer Discretionary",
+            "allocation": 1,
+            "allocationBenchmark": 6,
+            "return1d": 0.15,
+            "return1dBenchmark": -0.08,
+            "return1yr": 9,
+            "return1yrBenchmark": 3
+        },
+        {
+            "sectorCode": "CS",
+            "sector": "Consumer Staples",
+            "allocation": 2,
+            "allocationBenchmark": 11,
+            "return1d": -0.15,
+            "return1dBenchmark": 0.08,
+            "return1yr": -5,
+            "return1yrBenchmark": 5
+        },
+        {
+            "sectorCode": "EN",
+            "sector": "Energy",
+            "allocation": 3,
+            "allocationBenchmark": 6,
+            "return1d": 0.1,
+            "return1dBenchmark": -0.04,
+            "return1yr": 34,
+            "return1yrBenchmark": 6
+        },
+        {
+            "sectorCode": "FI",
+            "sector": "Financials",
+            "allocation": 4,
+            "allocationBenchmark": 4,
+            "return1d": -0.06,
+            "return1dBenchmark": 0.02,
+            "return1yr": 8,
+            "return1yrBenchmark": 7
+        },
+        {
+            "sectorCode": "HC",
+            "sector": "Health Care",
+            "allocation": 5,
+            "allocationBenchmark": 10,
+            "return1d": 0.18,
+            "return1dBenchmark": 0.01,
+            "return1yr": 3,
+            "return1yrBenchmark": 8
+        },
+        {
+            "sectorCode": "ID",
+            "sector": "Industrials",
+            "allocation": 13,
+            "allocationBenchmark": 12,
+            "return1d": -0.2,
+            "return1dBenchmark": 0.1,
+            "return1yr": 10,
+            "return1yrBenchmark": 12
+        },
+        {
+            "sectorCode": "IT",
+            "sector": "Information Technology",
+            "allocation": 15,
+            "allocationBenchmark": 14,
+            "return1d": -0.27,
+            "return1dBenchmark": -0.04,
+            "return1yr": 22,
+            "return1yrBenchmark": 15
+        },
+        {
+            "sectorCode": "MT",
+            "sector": "Materials",
+            "allocation": 22,
+            "allocationBenchmark": 19,
+            "return1d": 0.28,
+            "return1dBenchmark": 0.25,
+            "return1yr": 11,
+            "return1yrBenchmark": 13
+        },
+        {
+            "sectorCode": "TL",
+            "sector": "Telecom Services",
+            "allocation": 25,
+            "allocationBenchmark": 17,
+            "return1d": -0.1,
+            "return1dBenchmark": 0.12,
+            "return1yr": 19,
+            "return1yrBenchmark": 23
+        },
+        {
+            "sectorCode": "UT",
+            "sector": "Utilities",
+            "allocation": 28,
+            "allocationBenchmark": 16,
+            "return1d": 0.3,
+            "return1dBenchmark": 0.25,
+            "return1yr": 42,
+            "return1yrBenchmark": 35
+        },
+        {
+            "sectorCode": "CASH",
+            "sector": "Cash",
+            "allocation": 3,
+            "allocationBenchmark": 1,
+            "return1d": 0,
+            "return1dBenchmark": 0,
+            "return1yr": 0,
+            "return1yrBenchmark": 0
+        }
+    ]
+}]

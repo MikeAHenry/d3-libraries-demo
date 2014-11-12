@@ -1,0 +1,19 @@
+{
+  "name": "d3-libraries-demo",
+  "version": "1.0.0",
+  "description": "As you add a demo, create a directory for it and link it in the main index.html page.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MikeAHenry/d3-libraries-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MikeAHenry/d3-libraries-demo/issues"
+  },
+  "homepage": "https://github.com/MikeAHenry/d3-libraries-demo"
+}
